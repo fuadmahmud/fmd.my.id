@@ -37,7 +37,7 @@
 		footerIntersecting && 'invisible'
 	]}
 >
-	<ul class="flex flex-row items-center justify-evenly rounded-md bg-orange-500 p-2">
+	<ul class="flex flex-row items-center justify-evenly rounded bg-glass p-2">
 		<li>
 			<a
 				class="flex flex-col items-center gap-0.5 rounded p-2 hover:bg-black/5"
@@ -71,5 +71,14 @@
 			/* multiple soft shadows 👇 */ 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
 			0 0.9px 1.5px hsla(0, 0%, 0%, 0.045),
 			0 3.5px 6px hsla(0, 0%, 0%, 0.09);
+	}
+
+	.bg-glass {
+		background: rgba(255, 105, 0, 0.75);
+		border-radius: 16px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border: 1px solid rgba(255, 105, 0, 0.3);
 	}
 </style>

@@ -14,7 +14,7 @@
 			<span class="typing-animate bg-orange-500"></span> FROM INDONESIA.
 		</h1>
 		<div class="flex flex-col gap-3 lg:items-end">
-			<AnimateScroll class="shadow-pop-bl w-fit" threshold={1} once={true}>
+			<AnimateScroll class="shadow-pop-bl w-fit" threshold={1}>
 				<img class="md:max-w-2xs lg:max-w-2xs" src={MyImg} alt="My Icon" />
 			</AnimateScroll>
 			<p class="mb-3 lg:mb-0 lg:max-w-1/2 lg:text-right">
@@ -23,7 +23,7 @@
 			</p>
 		</div>
 	</div>
-	<Link href="/blogs">VISIT LINKEDIN <ArrowRight size={16} /></Link>
+	<Link href="https://www.linkedin.com/in/fuadmahmud/" rel="no-referrer" target="_blank">VISIT LINKEDIN <ArrowRight size={16} /></Link>
 </section>
 <AnimateScroll once={true} class="scale-in-tl" threshold={0.2}>
 	<section class="p-4 md:p-8 lg:flex lg:flex-row lg:items-center lg:gap-4">
