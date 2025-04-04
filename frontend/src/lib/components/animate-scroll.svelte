@@ -14,14 +14,12 @@
 		once?: boolean;
 	} = $props();
 	const { isIntersecting, observe } = IntersectionObserverImpl();
-	let container: HTMLElement | undefined = $state();
+	let container: HTMLElement;
 
 	onMount(() => {
-		if (container) {
-			const unobserve = observe(container, threshold, once);
+		const unobserve = observe(container, threshold, once);
 
-			return unobserve;
-		}
+		return unobserve;
 	});
 </script>
 
