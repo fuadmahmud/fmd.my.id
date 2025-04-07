@@ -1,5 +1,6 @@
 # use the official Bun image
 # see all versions at https://hub.docker.com/r/oven/bun/tags
+# NOTE THIS ONLY WORK WITH svelte-adapter-bun
 FROM oven/bun:1 AS base
 WORKDIR /app
 
